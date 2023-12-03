@@ -8,12 +8,14 @@ public class Cinema
     public string Logo { get; private set; }
     public string Name { get; private set; }
     public string Description { get; private set; }
+    public IList<Movie> Movies { get; private set; }
 
-    public Cinema(int id, string logo, string name, string description)
+    public Cinema(int id, string logo, string name, string description, IList<Movie> movies)
     {
         Id = id;
         Logo = logo;
         Name = name;
         Description = description;
+        Movies = movies;
     }
 }
