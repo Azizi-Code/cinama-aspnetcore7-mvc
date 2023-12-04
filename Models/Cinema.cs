@@ -10,12 +10,11 @@ public class Cinema
     public string Description { get; private set; }
     public IList<Movie> Movies { get; private set; }
 
-    public Cinema(int id, string logo, string name, string description, IList<Movie> movies)
+    public Cinema(int id, string logo, string name, string description)
     {
         Id = id;
         Logo = logo;
         Name = name;
         Description = description;
-        Movies = movies;
     }
 }
