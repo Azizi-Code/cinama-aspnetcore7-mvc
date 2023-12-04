@@ -7,11 +7,9 @@ public class Actor_Movie
     public int MovieId { get; private set; }
     public Movie Movie { get; private set; }
 
-    public Actor_Movie(int actorId, Actor actor, int movieId, Movie movie)
+    public Actor_Movie(int actorId, int movieId)
     {
         ActorId = actorId;
-        Actor = actor;
         MovieId = movieId;
-        Movie = movie;
     }
 }

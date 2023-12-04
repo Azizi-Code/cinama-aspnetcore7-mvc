@@ -10,12 +10,11 @@ public class Actor
     public string Bio { get; private set; }
     public IList<Actor_Movie> ActorMovies { get; private set; }
 
-    public Actor(int id, string profilePictureUrl, string fullName, string bio, IList<Actor_Movie> actorMovies)
+    public Actor(int id, string profilePictureUrl, string fullName, string bio)
     {
         Id = id;
         ProfilePictureUrl = profilePictureUrl;
         FullName = fullName;
         Bio = bio;
-        ActorMovies = actorMovies;
     }
 }

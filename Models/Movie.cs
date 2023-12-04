@@ -24,8 +24,8 @@ public class Movie
     [ForeignKey("ProducerId")] public Producer Producer { get; private set; }
 
     public Movie(int id, string name, string description, double price, string imageUrl, DateTime startDate,
-        DateTime endDate, MovieCategory category, IList<Actor_Movie> actorMovies, int cinemaId, Cinema cinema,
-        int producerId, Producer producer)
+        DateTime endDate, MovieCategory category, int cinemaId,
+        int producerId)
     {
         Id = id;
         Name = name;
@@ -35,10 +35,7 @@ public class Movie
         StartDate = startDate;
         EndDate = endDate;
         Category = category;
-        ActorMovies = actorMovies;
         CinemaId = cinemaId;
-        Cinema = cinema;
         ProducerId = producerId;
-        Producer = producer;
     }
 }
